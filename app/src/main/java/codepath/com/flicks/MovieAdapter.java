@@ -9,12 +9,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 
 import codepath.com.flicks.models.Config;
+import codepath.com.flicks.models.GlideApp;
 import codepath.com.flicks.models.Movie;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
@@ -60,10 +60,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         String imageUrl = config.getImageUrl(config.getPosterSize(), movie.getPosterPath());
 
         // load image using glide
-        Glide.with(context)
+        GlideApp.with(context)
                 .load(imageUrl)
+                .placeholder(R.drawable.flicks_movie_placeholder)
+                .transform(new RoundedCornersTransformation(15, 0))
+                .error(R.drawable.flicks_movie_placeholder)
                 .into(holder.ivPosterImage);
-
     }
 
     // returns the total number of items in the list
