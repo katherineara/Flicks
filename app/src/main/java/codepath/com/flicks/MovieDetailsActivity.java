@@ -29,6 +29,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvOverview = (TextView) findViewById(R.id.tvOverview);
         rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
 
+        tvTitle.setText(movie.getTitle());
+        tvOverview.setText(movie.getOverview());
+
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();
         rbVoteAverage.setRating(voteAverage = voteAverage > 0 ? voteAverage / 2.0f : voteAverage);
