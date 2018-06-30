@@ -2,7 +2,7 @@
 
 Flixster shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: 10 hours spent in total
+Time spent: 15 hours spent in total
 
 ## User Stories
 
@@ -32,7 +32,7 @@ Edited the UI to enhance the visual experience.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/QqKkbCz3GC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/ULBje1YR3w.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://recordit.co/).
 
