@@ -4,11 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieTrailerActivity">
+    tools:context=".MovieTrailerActivity"
+    android:background="@color/black">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
         android:layout_width="match_parent"
         android:layout_height="176dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_centerInParent="true"
+        android:text="Enjoy the Video!"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
 </RelativeLayout>

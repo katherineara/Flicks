@@ -46,9 +46,8 @@
         android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="23dp"
-        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp"
         android:text="Video"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 </RelativeLayout>
